@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="icon" href="../img/favicon.png" type="image/png">
+</head>
+
+<body>
+	<div class="about">
+		<div class="over">
+			<img src="../img/persona.png" alt="" class="ass">
+			<p class="overflow">Maksym Fadeev</p>
+		</div>
+		<div class="info">
+			<div class="info-me">
+				<p class="lvl"> 19 Level</p>
+				<span>Class:</span>
+				<p class="class">Frontend Developer</p>
+			</div>
+			<div class="hp">
+				<p class="hp-index">80/100</p>
+			</div>
+		</div>
+	</div>
+	<div class="midls">
+		<h1 class="title">Works</h1>
+		<div class="btn">
+			<a href="../index.html" class="back w">Back</a>
+		</div>
+	</div>
+	<div class="work">
+		<div class="work__content">
+			<div class="work__card web">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/web.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 1</h4>
+				</div>
+			</div>
+			<div class="work__card game">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/gamecity.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 2</h4>
+				</div>
+			</div>
+			<div class="work__card rest">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/rest.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 3</h4>
+				</div>
+			</div>
+			<div class="work__card clovery">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/clovery.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 4</h4>
+				</div>
+			</div>
+			<div class="work__card marcy">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/Marcy.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 5</h4>
+				</div>
+			</div>
+
+			<div class="work__card vaw">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/vaw.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 6</h4>
+				</div>
+			</div>
+			<div class="work__card halloween">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/Halloween.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 7</h4>
+				</div>
+			</div>
+			<div class="work__card whale">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/whale.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 8</h4>
+				</div>
+			</div>
+			<div class="work__card bg-video">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/bg-video.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 9</h4>
+				</div>
+			</div>
+			<div class="work__card OstGame">
+				<div class="work__img">
+					<img class="portfolio__img" src="../img/works/OstGame.svg" alt="#">
+				</div>
+				<div class="work__text">
+					<h4>Project 10</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/main.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
