@@ -338,3 +338,11 @@ ul li:hover .descr {
 		left: 100px;
 	}
 }
+@media screen and (max-width:500px) {
+	.about,  .skil{
+		top: 0px !important;
+		width: 100% !important;
+		left: 0px !important;
+		border-radius: 0 !important;
+	}
+}

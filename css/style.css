@@ -725,7 +725,7 @@ a:hover .overflow-social {
 	}
 
 	.ab {
-		padding: 0;
+		padding: 0 20px;
 	}
 
 	.ab .back {
@@ -875,16 +875,24 @@ a:hover .overflow-social {
 }
 
 @media screen and (max-width: 500px) {
+	li{
+		margin-top: 5px;
+	}
+	.navbar{
+		margin-top: 1.5rem;
+	}
 
 	.about {
-		width: 100%;
-		left: 0px;
-		border-radius: 0;
+		top: 0px !important;
+		width: 100% !important;
+		left: 0px !important;
+		border-radius: 0 !important;
 	}
 
 	.about-me {
-		max-height: 600px;
-		background-image: url(../img/menu1.png);
+
+		max-height: 600px !important;
+		background-image: url(../img/menu1.png) ;
 		background-position: center;
 	}
 
@@ -928,6 +936,11 @@ a:hover .overflow-social {
 		top: 90px !important;
 		left: 20% !important;
 	}
+
+	
+.back::before {
+	top: -18px;
+}
 }
 
 @media screen and (max-width: 415px) {
@@ -966,6 +979,7 @@ a:hover .overflow-social {
 }
 
 @media screen and (max-width: 380px) {
+	
 	.education {
 		background-size: 100%;
 		padding-bottom: 80px;
