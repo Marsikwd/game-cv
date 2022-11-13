@@ -959,24 +959,7 @@ a:hover .overflow-social {
 	}
 
 }
-@media screen and (max-height: 1280px) {
-	.ed .back {
-		top: 24% !important;
-	}
-}
-@media screen and (max-height: 1024px) {
-	.ed .back {
-		top: 26% !important;
-	}
-}
-@media screen and (max-height: 896px) {
 
-	.ed .back {
-		top: 35% !important;
-	
-	}
-
-}
 
 @media screen and (max-width: 380px) {
 	
