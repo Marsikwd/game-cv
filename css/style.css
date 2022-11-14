@@ -745,6 +745,15 @@ a:hover .overflow-social {
 		background-size: 80%;
 	}
 
+	.menu-link {
+		padding-top: 20px;
+		font-size: 2rem;
+	}
+
+	.menu-link li a {
+		font-size: 2rem;
+	}
+
 	.book {
 		top: 0;
 	}
@@ -839,6 +848,23 @@ a:hover .overflow-social {
 		margin-top: 5px;
 	}
 
+	.menu-link {
+		padding-top: 0px;
+		font-size: 1rem;
+	}
+
+	.menu-link li a {
+		font-size: 1.5rem;
+	}
+
+	.hp {
+		width: 180px;
+	}
+
+	.hp::after {
+		width: 80%;
+	}
+
 	.navbar {
 		margin-top: 1.5rem;
 	}
@@ -877,6 +903,8 @@ a:hover .overflow-social {
 
 	}
 
+
+
 	/* -------contact------ */
 	form {
 		padding-top: 60px;
@@ -897,7 +925,8 @@ a:hover .overflow-social {
 
 @media screen and (max-width: 415px) {
 	.education {
-		background-size: 70% !important;
+		width: 90%;
+		background-size: 95% !important;
 		padding-bottom: 40px;
 	}
 
@@ -914,6 +943,18 @@ a:hover .overflow-social {
 
 
 @media screen and (max-width: 380px) {
+	.menu {
+		background-image: url(../img/menu1.png);
+		width: 310px;
+	}
+
+	.menu ul {
+		padding-top: 20px;
+	}
+
+	.menu-link li {
+		margin-top: 15px;
+	}
 
 	.education {
 		background-size: 100%;
