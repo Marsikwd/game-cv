@@ -897,7 +897,8 @@ a:hover .overflow-social {
 
 @media screen and (max-width: 415px) {
 	.education {
-		background-size: 70% !important;
+		width: 90%;
+		background-size: 95% !important;
 		padding-bottom: 40px;
 	}
 
