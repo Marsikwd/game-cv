@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
 			$('.loader').toggleClass('hide');
 			$('#start1').toggleClass('hide');
 			$(e.currentTarget).attr('disabled', false);
-			window.location.href = "marsikwd.github.io/game-resume/start.html";
+			window.location.href = "start.html";
 		}, 5000)
 	});
 });
