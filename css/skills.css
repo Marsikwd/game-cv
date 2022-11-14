@@ -337,9 +337,16 @@ ul li:hover .descr {
 	.back {
 		left: 100px;
 	}
+
+	.back::before {
+		display: none;
+	}
 }
+
 @media screen and (max-width:500px) {
-	.about,  .skil{
+
+	.about,
+	.skil {
 		top: 0px !important;
 		width: 100% !important;
 		left: 0px !important;

@@ -17,8 +17,11 @@ button {
 
 body {
 	background-image: url('../img/back.gif');
+	background-attachment: fixed;
+	min-height: 668px;
+	position: relative;
+	-webkit-background-size: cover;
 	background-size: cover;
-	background-repeat: no-repeat;
 	position: relative;
 	color: #fff;
 	font-family: "pixel";
@@ -578,18 +581,6 @@ a:hover .overflow-social {
 }
 
 
-.contact-dragon {
-	position: absolute;
-	top: 34px;
-	left: 50%;
-	transform: translateX(-50%);
-	opacity: 0.8;
-	z-index: -10;
-}
-
-
-
-
 @media screen and (max-width: 1400px) {
 	.over .overflow {
 		padding-left: 13px;
@@ -801,6 +792,7 @@ a:hover .overflow-social {
 	.back-btn {
 		left: 0px !important;
 	}
+
 	.title-mid .back-btn {
 		top: 80px !important;
 	}
@@ -836,11 +828,6 @@ a:hover .overflow-social {
 	.overflow-social {
 		display: none;
 	}
-
-	.contact-dragon {
-		width: 100%;
-	}
-
 
 	.back::before {
 		display: none;
@@ -887,7 +874,7 @@ a:hover .overflow-social {
 		height: 100%;
 		background-image: url(../img/menu1.png);
 		background-size: 100%;
-	
+
 	}
 
 	/* -------contact------ */
