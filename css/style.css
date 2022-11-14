@@ -606,9 +606,6 @@ a:hover .overflow-social {
 	}
 
 	/* eduation */
-	.ed {
-		padding-top: 40px;
-	}
 
 	.education {
 		width: 60%;
@@ -966,7 +963,7 @@ a:hover .overflow-social {
 	}
 
 	.ed {
-		padding-top: 40px !important;
+		padding-top: 80px !important;
 	}
 
 }
