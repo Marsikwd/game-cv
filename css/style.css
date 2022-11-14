@@ -939,7 +939,10 @@ a:hover .overflow-social {
 
 	
 .back::before {
-	top: -25%;
+	top: -40%!important;
+}
+.back:hover:before {
+	top: -50%!important;
 }
 }
 
