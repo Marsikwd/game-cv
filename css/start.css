@@ -137,6 +137,12 @@ body {
 	@media screen and (max-width: 533px) {
 		.title {
 			text-align: center;
-			top: 15%;
+			top: 5%;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		.title {
+			top: 0%;
 		}
 	}

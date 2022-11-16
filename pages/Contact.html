@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../css/font.css">
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<title>Contact</title>
 </head>
 
@@ -37,7 +38,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<form action="#" id="form">
+		<form id="form">
 			<div class="field" tabindex="1">
 				<label for="username">
 					<i class="far fa-user"></i>Your Name
@@ -56,8 +57,9 @@
 				</label>
 				<textarea name="message" placeholder="type here" required></textarea>
 			</div>
-			<button class="">Send Me Message</button>
+			<button id="messegeResult" onclick="AjaxFormRequest('messegeResult', 'formMain', 'mail.php')">Send Me Message</button>
 		</form>
+
 	</div>
 	<div class="social">
 		<div class="social-container">
@@ -87,7 +89,28 @@
 	<div id="muted">
 		<img id="mute" src="../img/icons/mute_off.png" onclick="Mute()">
 	</div>
+	<script type="text/javascript">
+		function AjaxFormRequest(result_id, formMain, url) {
+			jQuery.ajax({
+				url: url,
+				type: "POST",
+				dataType: "html",
+				data: jQuery("#" + formMain).serialize(),
+				success: function (response) {
+					document.getElementById(result_id).innerHTML = response;
+				},
+				error: function (response) {
+				document.getElementById(result_id).innerHTML = "<p>Try again!</p>";
+				}
+			});
 
+			$(':input', '#formMain')
+				.not(':button, :submit, :reset, :hidden')
+				.val('')
+				.removeAttr('checked')
+				.removeAttr('selected');
+		}
+	</script>
 	<script src="../js/mute.js"></script>
 	<script src="../js/main.js"></script>
 	<script src="https://kit.fontawesome.com/4fa41ad02f.js" crossorigin="anonymous"></script>
