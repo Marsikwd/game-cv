@@ -11,6 +11,6 @@ jQuery(document).ready(function ($) {
 			$('#start1').toggleClass('hide');
 			$(e.currentTarget).attr('disabled', false);
 			window.location.href = "pages/start.html";
-		}, 5000)
+		}, 5200)
 	});
 });
