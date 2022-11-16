@@ -1,7 +1,6 @@
 var audio = document.querySelector("audio");
 audio.volume = 0.5;
 
-
 myVid = document.getElementById("audio");
 imgMute = document.getElementById("mute");
 

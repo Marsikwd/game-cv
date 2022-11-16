@@ -128,3 +128,9 @@ font-size: 2rem;
 	}
 
 }
+
+@media screen and (max-width: 533px) {
+	.title{
+		text-align: center;
+	}
+}
