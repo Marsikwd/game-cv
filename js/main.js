@@ -1,4 +1,3 @@
-
 let linkWeb = document.querySelector('.web');
 
 linkWeb.addEventListener('click', function (e) {
@@ -61,3 +60,23 @@ linkOstgame.addEventListener('click', function (e) {
 	e.preventDefault();
 	window.open('https://marsikwd.github.io/OstGame/');
 })
+
+
+/* "use stict"
+
+document.addEventListener('DOMContentLoaded', function () {
+	const form = document.getElementById('form');
+	form.addEventListener('submit', formSend);
+
+	async function formSend(e){
+		e.preventDefault();
+	
+		let error = formValidate(form);
+	}
+
+	function formvalidate(form) {
+		let error = 0;
+		let formReq = document.querySelectorAl1('._req');
+	}
+
+}); */

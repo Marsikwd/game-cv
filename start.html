@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font.css">
-	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="icon" href="img/favicon.ico" type="image/icon">
 	<title>Maksym Fadeev</title>
 </head>
 
@@ -34,17 +34,22 @@
 			<nav class="navbar">
 				<ul class="menu-link">
 					<li><a href="pages/About.html" class="transition">About</a></li>
-					<li><a href="pages/Education.html" class="transition">Education</a></li>
-					<li><a href="pages/Skills.html" class="transition">Skills</a></li>
+					<li><a href="pages/Education.html" class="transition" id="mus">Education</a></li>
+					<li><a href="pages/Skills.html" class="transition" id="mus">Skills</a></li>
 					<li><a href="pages/Works.html" class="transition">Works</a></li>
 					<li><a href="pages/Contact.html" class="transition">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
-	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
 
+	<audio preload="auto" loop="true" src="sound/audio.mp3" autobuffer id="audio"></audio>
+
+	<div id="muted">
+		<img id="mute" src="img/icons/mute_off.png" onclick="Mute()">
+	</div>
+
+	<script src="js/mute.js"></script>
 </body>
 
 </html>

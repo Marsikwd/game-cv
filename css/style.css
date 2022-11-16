@@ -655,6 +655,9 @@ a:hover .overflow-social {
 	.midls {
 		margin-top: 80px;
 	}
+	#muted {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1054px) {
@@ -977,4 +980,20 @@ a:hover .overflow-social {
 	position: absolute;
 	top: 80px;
 	left: -80px;
+}
+
+audio {
+	display: none;
+}
+
+#muted {
+	position: fixed;
+	bottom: 25px;
+	left: 25px;
+	padding: 5px 7px 6px 7px;
+	opacity: 0.5;
+	transition: all .2 ease-in-out;
+}
+#muted img{
+	cursor: url('../img/pointer.png'), pointer;
 }

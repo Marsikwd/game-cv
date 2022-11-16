@@ -320,6 +320,9 @@ ul li:hover .descr {
 	.back {
 		top: 160px;
 	}
+	#muted {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1054px) {
@@ -352,4 +355,20 @@ ul li:hover .descr {
 		left: 0px !important;
 		border-radius: 0 !important;
 	}
+}
+
+audio {
+	display: none;
+}
+
+#muted {
+	position: fixed;
+	bottom: 25px;
+	left: 25px;
+	padding: 5px 7px 6px 7px;
+	opacity: 0.5;
+	transition: all .2 ease-in-out;
+}
+#muted img{
+	cursor: url('../img/pointer.png'), pointer;
 }
