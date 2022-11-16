@@ -140,3 +140,8 @@ body {
 			top: 5%;
 		}
 	}
+	@media screen and (max-width: 380px) {
+		.title {
+			top: 0%;
+		}
+	}
