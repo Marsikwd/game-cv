@@ -424,107 +424,20 @@ li:hover a::before {
 
 /* --------------------form--------------- */
 
-.container {
-	height: 50%;
-	padding: 0 16px;
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	z-index: 1;
-}
-
-form {
-	width: 400px;
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	justify-content: center;
-	padding-top: 180px;
-}
-
-form div,
-form label,
-form input,
-form textarea {
-	width: 100%;
-}
-
-.field:nth-of-type(2) {
-	margin: 16px 0;
-}
-
-label,
-input,
-textarea {
-	padding: 8px;
-	cursor: url('../img/pointer.png'), pointer;
-}
-
-label i {
-	margin: 0 130px 0 0;
-}
-
-.field:focus-within label {
-	color: rgb(212, 0, 0);
-}
-
-input,
-textarea {
-	background: #36366b;
-	border: none;
-	border-radius: 4px;
-	color: #9a9a9c;
-	box-shadow: 0 8px 6px -6px #555;
-	box-shadow: 0px 0px 36px 10px rgba(0, 0, 0, 0.5);
-}
-
-input:focus,
-textarea:focus {
-	background: #312d55;
-	box-shadow: none;
-	color: rgb(212, 0, 0);
-}
-
-textarea {
-	resize: none;
-	height: 200px;
-}
-
-button {
-	background: rgb(36, 0, 0);
-	background: linear-gradient(90deg, rgba(36, 0, 0, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(204, 0, 0, 1) 100%);
-	font-family: 'pixel';
-	margin: 16px 0 50px 0;
-	padding: 8px 16px;
-	color: #fff;
-	border: none;
-	border-radius: 4px;
-	box-shadow: 0 8px 6px -6px #555;
-	transition: 0.2s;
-	cursor: url('../img/mail.cur'), pointer;
-}
-
-button:hover {
-	letter-spacing: 2px;
-	box-shadow: none;
-}
 
 .social {
-	position: absolute;
-	top: 53%;
-	right: 30%;
-	transform: translate(-20%, -44%);
 	display: flex;
-	flex-direction: column;
-	z-index: 100;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	padding-top: 200px;
 }
 
 .social a {
 	width: 70px;
 	height: 70px;
 	margin-top: 20px;
+	margin-right: 20px;
 }
 
 
@@ -539,20 +452,19 @@ button:hover {
 
 .overflow-social {
 	position: absolute;
-	top: 36px;
-	left: 36px;
-	width: 200px;
+	top: 40px;
+	left: -38.5px;
+	width: 150px;
 	padding: 4px 4px;
 	background-color: #362d4b;
 	text-align: center;
 	color: #fff;
 	opacity: 0;
-
 	transition: 0.9s;
-	transform: scale(0);
 	border: 5px solid #361f39;
 	border-radius: 4px;
 	cursor: url('../img/pointer.png'), pointer;
+	transform: scale(0.1);
 }
 
 .gmail {
@@ -568,8 +480,11 @@ button:hover {
 }
 
 a:hover .overflow-social {
+	top: 85px;
+	left: -63.5px;
 	opacity: 1;
-	transform: scale(0.9) translate(31px, 0px);
+	transform: scale(0.9) translate(31px, 10px);
+	z-index: 100px;
 }
 
 .social a img {
@@ -631,14 +546,6 @@ a:hover .overflow-social {
 	/* -------contact--------- */
 
 
-	.social {
-		right: 0;
-	}
-
-	.overflow-social {
-		left: -220px;
-	}
-
 }
 
 @media screen and (max-width: 1154px) {
@@ -655,6 +562,7 @@ a:hover .overflow-social {
 	.midls {
 		margin-top: 80px;
 	}
+
 	#muted {
 		display: none;
 	}
@@ -725,16 +633,6 @@ a:hover .overflow-social {
 		padding-top: 50px !important;
 	}
 
-	/* -------contact--------- */
-	form {
-		padding-top: 40px;
-	}
-
-	.c-btn {
-		top: 80px !important;
-		left: 20% !important;
-
-	}
 }
 
 @media screen and (max-width: 1140px) {
@@ -767,6 +665,10 @@ a:hover .overflow-social {
 	.ed .back {
 		top: 30% !important;
 
+	}
+
+	.social{
+		padding-top: 80px;
 	}
 }
 
@@ -823,16 +725,6 @@ a:hover .overflow-social {
 
 
 	/* -------contact--------- */
-
-
-	.social {
-		position: relative;
-		margin-bottom: 20px;
-		justify-content: center;
-		flex-direction: row;
-		gap: 1rem;
-		transform: translate(0);
-	}
 
 	.overflow-social {
 		display: none;
@@ -969,6 +861,10 @@ a:hover .overflow-social {
 		padding-top: 80px !important;
 	}
 
+	.social{
+		flex-direction: column;
+	}
+
 }
 
 
@@ -994,6 +890,7 @@ audio {
 	opacity: 0.5;
 	transition: all .2 ease-in-out;
 }
-#muted img{
+
+#muted img {
 	cursor: url('../img/pointer.png'), pointer;
 }

@@ -8,8 +8,6 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/font.css">
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<title>Contact</title>
 </head>
 
@@ -37,30 +35,6 @@
 			<a href="start.html" class="back">Back</a>
 		</div>
 	</div>
-	<div class="container">
-		<form id="form">
-			<div class="field" tabindex="1">
-				<label for="username">
-					<i class="far fa-user"></i>Your Name
-				</label>
-				<input name="username" type="text" placeholder="your name" required>
-			</div>
-			<div class="field" tabindex="2">
-				<label for="email">
-					<i class="far fa-envelope"></i>Your Email
-				</label>
-				<input name="email" type="text" placeholder="email@gmail.com" required>
-			</div>
-			<div class="field" tabindex="3">
-				<label for="message">
-					<i class="far fa-edit"></i>Your Message
-				</label>
-				<textarea name="message" placeholder="type here" required></textarea>
-			</div>
-			<button id="messegeResult" onclick="AjaxFormRequest('messegeResult', 'formMain', 'mail.php')">Send Me Message</button>
-		</form>
-
-	</div>
 	<div class="social">
 		<div class="social-container">
 			<a href="https://github.com/Marsikwd" target="_blank"><img src="../img/github.png" alt="github"
@@ -69,17 +43,17 @@
 			</a>
 		</div>
 		<div class="social-container">
-			<a href="" target="_blank"> <img src="../img/gmail.png" alt="gmail" class="social-link">
+			<a href="mailto:marsiknamasrse@gmail.com" target="_blank"> <img src="../img/gmail.png" alt="gmail" class="social-link">
 				<p class="overflow-social gmail">my gmail</p>
 			</a>
 		</div>
 		<div class="social-container">
-			<a href="" target="_blank"> <img src="../img/linkindin.png" alt="linkindin" class="social-link">
+			<a href="https://www.linkedin.com/in/maksym-fadeev-08b584246/" target="_blank"> <img src="../img/linkindin.png" alt="linkindin" class="social-link">
 				<p class="overflow-social linkindin">my linkindin</p>
 			</a>
 		</div>
 		<div class="social-container">
-			<a href="" target="_blank"> <img src="../img/phone.png" alt="phone" class="social-link">
+			<a href="tel:380679091028" target="_blank"> <img src="../img/phone.png" alt="phone" class="social-link">
 				<p class="overflow-social phone">my phone</p>
 			</a>
 		</div>
@@ -89,31 +63,8 @@
 	<div id="muted">
 		<img id="mute" src="../img/icons/mute_off.png" onclick="Mute()">
 	</div>
-	<script type="text/javascript">
-		function AjaxFormRequest(result_id, formMain, url) {
-			jQuery.ajax({
-				url: url,
-				type: "POST",
-				dataType: "html",
-				data: jQuery("#" + formMain).serialize(),
-				success: function (response) {
-					document.getElementById(result_id).innerHTML = response;
-				},
-				error: function (response) {
-				document.getElementById(result_id).innerHTML = "<p>Try again!</p>";
-				}
-			});
-
-			$(':input', '#formMain')
-				.not(':button, :submit, :reset, :hidden')
-				.val('')
-				.removeAttr('checked')
-				.removeAttr('selected');
-		}
-	</script>
 	<script src="../js/mute.js"></script>
-	<script src="../js/main.js"></script>
-	<script src="https://kit.fontawesome.com/4fa41ad02f.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
